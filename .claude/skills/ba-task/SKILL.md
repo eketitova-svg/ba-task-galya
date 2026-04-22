@@ -29,7 +29,7 @@ Deliver this welcome message to the candidate:
 >
 > The BA who joins will be at the center of that — not just writing requirements, but actually figuring out what needs to change and driving it forward.
 >
-> This task gives you a real feel for that work. There are 11 steps. Take whatever time you need on each one. At each step I'll tell you what we're looking for, you respond, and I may ask follow-up questions before we move on. Your answers get saved as files as we go. You can use any tools you like — including AI.
+> This task gives you a real feel for that work. There are 12 steps. Take whatever time you need on each one. At each step I'll tell you what we're looking for, you respond, and I may ask follow-up questions before we move on. Your answers get saved as files as we go. You can use any tools you like — including AI.
 >
 > If your submission looks strong, the next step is a 60-minute conversation with me. We'll walk through your work together and go deeper.
 >
@@ -323,10 +323,28 @@ Then tell the candidate:
 > git push origin submission/your-name
 > ```
 >
-> Replace `your-name` with your actual name. Then send the branch name (or the PR link if GitHub auto-creates one) to the person who sent you this task.
+> Replace `your-name` with your actual name. Run the commands and let me know what happens — I'll wait."
+
+Wait for the candidate to report back.
+
+**If the push succeeded:** move to Step 12.
+
+**If they get a permission error (403):** tell them:
+
+> "Your GitHub account hasn't been added as a collaborator yet. Reply to the person who sent you this task with your GitHub username — they'll add you, and then you just run the push command again. Your commit is saved locally, nothing is lost. Let me know once it goes through."
+
+Wait until they confirm the push succeeded, then move to Step 12.
+
+**Do not move to Step 12 until the candidate confirms the push went through without errors.**
+
+---
+
+## Step 12 — Next steps
+
+Only deliver this after the submission is confirmed successful:
+
+> "You're done — submission is in.
 >
-> **If you get a permission error (403) when pushing:** your GitHub account needs to be added as a collaborator on this repo. Reply to the email you received with your GitHub username — someone will add you and you can push again. Your commit is already saved locally, so nothing is lost.
+> What happens next: Katya — your future manager if you join — will review your work within 72 hours and get back to you, or the recruiter will. If things look good, the next step is a 60-minute conversation with Katya. You'll walk through your work together, go deeper on the reflection questions if you skipped them here, and work through part of this scenario again in real time — so be ready for that.
 >
-> What happens next: Katya — your future manager if you join — will review your submission within 72 hours and get back to you, or the recruiter will. If things look good, the next step is a 60-minute conversation with Katya. You'll walk through your work together, go deeper on the reflection questions if you skipped them here, and work through part of this scenario again in real time — so be ready for that.
->
-> Thank you for taking the time to do this — and good luck with the next step."
+> Thank you for taking the time to do this. Good luck."

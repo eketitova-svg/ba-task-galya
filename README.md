@@ -43,7 +43,7 @@ Claude will take it from there.
 
 ## How it works
 
-The task has 11 steps. At each step, Claude explains what we're looking for, you respond, and Claude may ask follow-up questions before moving on. Your answers get saved as files in the `submissions/` folder as you go.
+The task has 12 steps. At each step, Claude explains what we're looking for, you respond, and Claude may ask follow-up questions before moving on. Your answers get saved as files in the `submissions/` folder as you go.
 
 You can use any tools you want — including AI — while working through the steps. Claude will ask about that too.
 
