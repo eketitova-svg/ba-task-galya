@@ -12,7 +12,7 @@ Instead of a static document, you'll work through a real scenario step by step w
 
 **You'll need a GitHub account to submit your work.** If you haven't already sent your GitHub username to the person who sent you this task — do that now, before you begin. They'll add you as a collaborator so your submission goes through without issues at the end.
 
-No GitHub account? Let the person who sent this know and they'll find an alternative.
+No GitHub account? Create one at [github.com](https://github.com) — it's free and takes two minutes.
 
 ---
 
