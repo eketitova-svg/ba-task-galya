@@ -124,7 +124,11 @@ Tell the candidate:
 
 Ask:
 
-> "Based on your map — what are the top 3 systemic problems you see? These should be root causes, not symptoms. And for each one, explain why it matters — what does it cause downstream? No solutions yet."
+> "Based on your map — what are the top 3 systemic problems you see?
+>
+> A few things to keep in mind: we're looking for root causes here, not symptoms. A symptom is what you observe ('AMs spend weeks gathering info before they can start'). A root cause is why it keeps happening ('there's no structured data capture at the point of sale'). And for each problem, explain what it causes downstream — who else is affected and how.
+>
+> We'll get to solutions in the next step. For now, just the diagnosis."
 
 **Evaluation criteria (minimum bar):**
 - Problems are systemic (root causes), not symptoms (e.g., "Sales provides no structured handoff data" not "AM doesn't have enough information")
@@ -300,7 +304,13 @@ Do not paraphrase or edit the candidate's words. Paste their content verbatim.
 
 ## Step 11 — Submission
 
-Tell the candidate:
+Before giving the git commands, ask the candidate:
+
+> "One last thing before you submit — any feedback on the task itself? Anything that was unclear, too long, or that you'd change? This goes directly to Katya, not into your submission score — so be honest."
+
+If they share something, add it to `submissions/00-summary.md` under a `## Feedback on the Task` section (append to the file — don't recreate it). If they have nothing to say, move on.
+
+Then tell the candidate:
 
 > "Your submission files are in the `submissions/` folder. Here are the exact commands to submit:
 >
@@ -313,6 +323,6 @@ Tell the candidate:
 >
 > Replace `your-name` with your actual name. Then send the branch name (or the PR link if GitHub auto-creates one) to the person who sent you this task.
 >
-> What happens next: I'll review your submission within 72 hours and get back to you — either me or the recruiter. If things look good, the next step is a 60-minute conversation with me. We'll walk through your work together, go deeper on the reflection questions if you skipped them here, and work through part of this scenario again in real time — so be ready for that.
+> What happens next: Katya — your future manager if you join — will review your submission within 72 hours and get back to you, or the recruiter will. If things look good, the next step is a 60-minute conversation with Katya. You'll walk through your work together, go deeper on the reflection questions if you skipped them here, and work through part of this scenario again in real time — so be ready for that.
 >
-> Good work — this was a real piece of analysis, not a template exercise."
+> Thank you for taking the time to do this — and good luck with the next step."
