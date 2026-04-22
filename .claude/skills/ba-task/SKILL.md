@@ -29,7 +29,7 @@ Deliver this welcome message to the candidate:
 >
 > The BA who joins will be at the center of that — not just writing requirements, but actually figuring out what needs to change and driving it forward.
 >
-> This task gives you a real feel for that work. There are 12 steps. Take whatever time you need on each one. At each step I'll tell you what we're looking for, you respond, and I may ask follow-up questions before we move on. Your answers get saved as files as we go. You can use any tools you like — including AI.
+> This task gives you a real feel for that work. There are 13 steps. Take whatever time you need on each one. At each step I'll tell you what we're looking for, you respond, and I may ask follow-up questions before we move on. Your answers get saved as files as we go. You can use any tools you like — including AI.
 >
 > If your submission looks strong, the next step is a 60-minute conversation with me. We'll walk through your work together and go deeper.
 >
@@ -245,11 +245,25 @@ If they skip: "No problem — be ready to talk about it when you meet Katya."
 
 ---
 
-## Step 10 — Generate summary
+## Step 10 — Feedback on the task
 
 Tell the candidate:
 
-> "You're done with the task. Let me compile everything into a summary file."
+> "Almost done. One more question — and this one is about the task itself, not your work.
+>
+> Any feedback for Katya? Anything that was unclear, too long, confusing, or that you'd change? This goes directly to her — it doesn't affect your submission score."
+
+If they share something: create `submissions/07-task-feedback.md` with their response. Header: `# Feedback on the Task`.
+
+If they have nothing: "No problem." Move to Step 11.
+
+---
+
+## Step 11 — Generate summary
+
+Tell the candidate:
+
+> "Let me compile everything into a summary file."
 
 Create `submissions/00-summary.md` with this structure:
 
@@ -291,6 +305,11 @@ Create `submissions/00-summary.md` with this structure:
 
 ---
 
+## Feedback on the Task
+[paste content from 07-task-feedback.md, or "No feedback provided."]
+
+---
+
 ## Questions Asked During the Task
 [List every question the candidate asked during the session — their exact words, with the step number where they asked it. If none, write "No questions asked."]
 
@@ -304,15 +323,9 @@ Do not paraphrase or edit the candidate's words. Paste their content verbatim.
 
 ---
 
-## Step 11 — Submission
+## Step 12 — Submission
 
-Before giving the git commands, ask the candidate:
-
-> "One last thing before you submit — any feedback on the task itself? Anything that was unclear, too long, or that you'd change? This goes directly to Katya, not into your submission score — so be honest."
-
-If they share something, add it to `submissions/00-summary.md` under a `## Feedback on the Task` section (append to the file — don't recreate it). If they have nothing to say, move on.
-
-Then tell the candidate:
+Tell the candidate:
 
 > "Your submission files are in the `submissions/` folder. Here are the exact commands to submit:
 >
@@ -327,19 +340,19 @@ Then tell the candidate:
 
 Wait for the candidate to report back.
 
-**If the push succeeded:** move to Step 12.
+**If the push succeeded:** move to Step 13.
 
 **If they get a permission error (403):** tell them:
 
 > "Your GitHub account hasn't been added as a collaborator yet. Reply to the person who sent you this task with your GitHub username — they'll add you, and then you just run the push command again. Your commit is saved locally, nothing is lost. Let me know once it goes through."
 
-Wait until they confirm the push succeeded, then move to Step 12.
+Wait until they confirm the push succeeded, then move to Step 13.
 
-**Do not move to Step 12 until the candidate confirms the push went through without errors.**
+**Do not move to Step 13 until the candidate confirms the push went through without errors.**
 
 ---
 
-## Step 12 — Next steps
+## Step 13 — Next steps
 
 Only deliver this after the submission is confirmed successful:
 
