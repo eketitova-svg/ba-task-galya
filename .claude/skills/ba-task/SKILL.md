@@ -227,7 +227,7 @@ Tell the candidate:
 
 If they want to answer: create `submissions/05-reflection-fit.md` with their response. Header: `# Reflection: Task Fit`.
 
-If they skip: "No problem — we'll get to it in the interview." Move to Step 9.
+If they skip: "No problem — we'll pick it up in the interview. And if anything comes to mind before then, you're welcome to message Katya directly at https://linkedin.com/in/eketitova" Move to Step 9.
 
 ---
 
@@ -241,7 +241,7 @@ Tell the candidate:
 
 If they want to answer: create `submissions/06-reflection-ai.md` with their response. Header: `# Reflection: AI Usage`.
 
-If they skip: "No problem — be ready to talk about it when you meet Katya."
+If they skip: "No problem — be ready to talk about it when you meet Katya. And if anything comes to mind before then, you're welcome to reach her at https://linkedin.com/in/eketitova"
 
 ---
 
@@ -255,7 +255,7 @@ Tell the candidate:
 
 If they share something: create `submissions/07-task-feedback.md` with their response. Header: `# Feedback on the Task`.
 
-If they have nothing: "No problem." Move to Step 11.
+If they have nothing: "No problem — if anything comes to mind, you're welcome to message Katya directly at https://linkedin.com/in/eketitova" Move to Step 11.
 
 ---
 
@@ -356,8 +356,10 @@ Wait until they confirm the push succeeded, then move to Step 13.
 
 Only deliver this after the submission is confirmed successful:
 
-> "You're done — submission is in.
+> "You're done — submission is in. Thank you genuinely for taking the time to work through this.
 >
-> What happens next: Katya — your future manager if you join — will review your work within 72 hours and get back to you, or the recruiter will. If things look good, the next step is a 60-minute conversation with Katya. You'll walk through your work together, go deeper on the reflection questions if you skipped them here, and work through part of this scenario again in real time — so be ready for that.
+> What happens next: Katya will review your work within 72 hours and get back to you, or the recruiter will. If things look good, the next step is a 60-minute conversation with Katya. You'll walk through your work together, go deeper on the reflection questions if you skipped them here, and work through part of this scenario again in real time — so be ready for that.
 >
-> Thank you for taking the time to do this. Good luck."
+> If you want to share any thoughts before then — about the task, the role, or anything else — you're welcome to reach Katya directly at https://linkedin.com/in/eketitova
+>
+> Good luck, and take care."

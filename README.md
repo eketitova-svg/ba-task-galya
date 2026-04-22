@@ -1,6 +1,10 @@
 # BA/SA Take-Home Task
 
-This is an interactive take-home task for the Senior BA/SA position. Instead of a document to fill out, you'll work through it step by step with Claude as your guide.
+Hi — I'm Katya (Ekaterina Titova), and if you're reading this, you're considering joining our team at Betby.
+
+We're a B2B sportsbook platform powering hundreds of clients worldwide. The BA/SA who joins will sit at the heart of how our commercial side operates — mapping broken processes across Sales, Account Management, Integration Engineering, and Support, figuring out what to build or change, and making sure it actually worked. It's hands-on, cross-team work. If that sounds interesting, this task should feel like it too.
+
+Instead of a static document, you'll work through a real scenario step by step with Claude as your guide. At each step, Claude explains what we're looking for, you respond, and Claude may ask follow-up questions before moving on. Your work gets saved as files as you go.
 
 ---
 
@@ -67,3 +71,7 @@ Then send the branch name (or PR link) to the person who sent you this task.
 ---
 
 Any technical issues with setup? Reach out before starting — don't lose time on tooling.
+
+---
+
+Want to share feedback after, or have something you'd like to discuss? You're welcome to reach me directly at [linkedin.com/in/eketitova](https://linkedin.com/in/eketitova).
