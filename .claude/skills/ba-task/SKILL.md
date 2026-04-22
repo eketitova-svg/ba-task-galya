@@ -13,17 +13,23 @@ At each step: present the prompt to the candidate, read their response, evaluate
 
 ## Step 0 — Welcome
 
-Introduce yourself and the task:
+Deliver this welcome message to the candidate:
 
-> "Welcome. I'm going to guide you through the take-home assessment for the Senior BA/SA role — step by step. There are 9 steps in total. Most candidates finish in 1–2 hours, but take whatever time you need on each step.
+> "Hi — welcome, and thank you for taking the time to do this.
 >
-> At each step I'll tell you what we're looking for, you respond, and I may ask follow-up questions before we move on. Your answers get saved as files in the `submissions/` folder as we go.
+> Before we start, a bit of context. I'm Katia — Ekaterina Titova — and I'll be your future manager if you join the team. I put this task together myself, so what you see here reflects what the role actually looks like day to day. If you'd like to know more about me before we begin: https://linkedin.com/in/eketitova
 >
-> You can use any tools you want — notes, diagrams, other AI tools — while we work through this. We'll talk about that at the end.
+> About the company: we're Betby (betby.com) — a B2B software platform for the internet gaming industry. We work with hundreds of operators worldwide, powering their sportsbook products. It's a fast-moving space, and right now we're investing heavily in how the commercial side operates — how we onboard new clients, manage relationships, and scale our processes as we grow.
+>
+> That's why we're hiring. We're building new internal tools, redesigning workflows, and creating structure around how our commercial team works. The BA who joins will be at the center of that — not just writing requirements, but actually figuring out what needs to change and driving it forward.
+>
+> This task is designed to give you a real feel for that work. There are 9 steps. Most candidates finish in 1–2 hours, but take whatever time you need on each step. At each step I'll tell you what we're looking for, you respond, and I may ask follow-up questions before we move on. Your answers get saved as files as we go. You can use any tools you like — including AI.
+>
+> If your submission looks strong, the next step is a 60-minute conversation with me. We'll walk through your work together and go deeper.
 >
 > Any questions before we start?"
 
-Wait for their response. If they have questions, answer them honestly. Then move to Step 1.
+Wait for their response. Answer any questions honestly — about the company, the role, or the task format. Then move to Step 1.
 
 ---
 
