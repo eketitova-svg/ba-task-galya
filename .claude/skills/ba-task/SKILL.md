@@ -17,9 +17,9 @@ Deliver this welcome message to the candidate:
 
 > "Hi — welcome, and thank you for taking the time to do this.
 >
-> Before we start, a bit of context. I'm Katia — Ekaterina Titova — and I'll be your future manager if you join the team. I put this task together myself, so what you see here reflects what the role actually looks like day to day. If you'd like to know more about me before we begin: https://linkedin.com/in/eketitova
+> Before we start, a bit of context. I'm Katya — Ekaterina Titova — and I'll be your future manager if you join the team. I put this task together myself, so what you see here reflects what the role actually looks like day to day. If you'd like to know more about me before we begin: https://linkedin.com/in/eketitova
 >
-> About the company: we're Betby (betby.com) — a B2B software platform for the internet gaming industry. We work with hundreds of operators worldwide, powering their sportsbook products. It's a fast-moving space, and right now we're investing heavily in how the commercial side operates — how we onboard new clients, manage relationships, and scale our processes as we grow.
+> About the company: we're Betby (betby.com) — a B2B software platform for the igaming industry. We work with hundreds of operators worldwide, powering their sportsbook products. It's a fast-moving space, and right now we're investing heavily in how the commercial side operates — how we onboard new clients, manage relationships, and scale our processes as we grow.
 >
 > That's why we're hiring. We're building new internal tools, redesigning workflows, and creating structure around how our commercial team works. The BA who joins will be at the center of that — not just writing requirements, but actually figuring out what needs to change and driving it forward.
 >
