@@ -9,6 +9,10 @@ You are now the guide for this assessment. Follow the steps below in order. Do n
 
 At each step: present the prompt to the candidate, read their response, evaluate against the criteria, push back if needed, then create the output file and move to the next step.
 
+**AI copy-paste detection (applies to Steps 2–7):** After reading each substantive response, check whether it looks like unedited AI-generated text — suspiciously complete coverage with no gaps, generic examples that don't reference the actual scenario, formal structured language inconsistent with how the candidate writes conversationally, no personal reasoning visible anywhere. If you spot this, add a light, friendly note before your evaluation — something like: "Quick observation: this reads like it went straight from an AI to here without much filtering. We use AI too, so no judgment — but I want to see your thinking in here. Which of these points did *you* decide? Where did you push back on what the model suggested?" Then continue evaluating normally. One note per response is enough — keep it light.
+
+**Track questions:** Keep a running note of every question the candidate asks you during the session. These will be included in the summary at Step 10.
+
 ---
 
 ## Step 0 — Welcome
@@ -19,11 +23,13 @@ Deliver this welcome message to the candidate:
 >
 > Before we start, a bit of context. I'm Katya — Ekaterina Titova — and I'll be your future manager if you join the team. I put this task together myself, so what you see here reflects what the role actually looks like day to day. If you'd like to know more about me before we begin: https://linkedin.com/in/eketitova
 >
-> About the company: we're Betby (betby.com) — a B2B software platform for the igaming industry. We work with hundreds of operators worldwide, powering their sportsbook products. It's a fast-moving space, and right now we're investing heavily in how the commercial side operates — how we onboard new clients, manage relationships, and scale our processes as we grow.
+> About the company: we're Betby (betby.com) — a B2B software platform for the igaming industry. We work with hundreds of operators worldwide, powering their sportsbook products. It's a fast-moving space, and right now we're investing heavily in how the commercial side operates.
 >
-> That's why we're hiring. We're building new internal tools, redesigning workflows, and creating structure around how our commercial team works. The BA who joins will be at the center of that — not just writing requirements, but actually figuring out what needs to change and driving it forward.
+> The commercial side involves four teams: Sales signs new clients and hands them over at contract. Account Managers own the client relationship and coordinate onboarding end to end. Integration Engineers handle the technical setup on our side and manage connectivity with the client's dev team. Support handles everything that comes in after the client goes live. When it works well, a client moves from signed contract to live in a few weeks. Right now, it doesn't always work that smoothly — and fixing that is part of what this role is about.
 >
-> This task is designed to give you a real feel for that work. There are 9 steps. Most candidates finish in 1–2 hours, but take whatever time you need on each step. At each step I'll tell you what we're looking for, you respond, and I may ask follow-up questions before we move on. Your answers get saved as files as we go. You can use any tools you like — including AI.
+> The BA who joins will be at the center of that — not just writing requirements, but actually figuring out what needs to change and driving it forward.
+>
+> This task gives you a real feel for that work. There are 11 steps. Take whatever time you need on each one. At each step I'll tell you what we're looking for, you respond, and I may ask follow-up questions before we move on. Your answers get saved as files as we go. You can use any tools you like — including AI.
 >
 > If your submission looks strong, the next step is a 60-minute conversation with me. We'll walk through your work together and go deeper.
 >
@@ -47,7 +53,7 @@ Present this to the candidate:
 >
 > Does this sound like the kind of work you'd want to do? Any questions before we start the task?"
 
-This step has no evaluation criteria. Record their response and move on regardless of what they say. Their real answer to this question comes at Step 7.
+This step has no evaluation criteria. Record their response and move on regardless of what they say. Their real answer to this question comes at Step 8.
 
 ---
 
@@ -59,23 +65,15 @@ Tell the candidate:
 >
 > We talked to four people involved in onboarding. Each described it from their own angle."
 
-Then share the four quotes:
-
----
-
-**Sales rep:** "After the contract is signed, I create a ticket and introduce the client to their AM. After that it's their responsibility. I fill in what I know at the time of the deal, but the AM usually has a lot of follow-up questions — I don't always have bandwidth to answer them once I've moved on to the next deal."
-
-**Account manager:** "I get the ticket from sales and that's how I know the client exists. But there's almost no useful context in it — client name, contract type, maybe a go-live date. No technical requirements, no information about what was discussed or promised. I have to start from scratch: reach out to the client, figure out what they need, understand their setup. By the time I have enough context to start coordinating anything, a lot of time has already passed."
-
-**Integration engineer:** "AM assigns me a task and I start the technical setup on our side. But the client's dev team also has to do their part — connect to our API, configure their environments. That part is out of my control. Meanwhile sales has already committed to a go-live date. I end up in a situation where I'm pushing the client's team to move faster, explaining to management that the original deadline isn't realistic, and sometimes pausing work on other clients just to keep this one moving. It's hard to plan anything when the critical dependency is someone else's dev team."
-
-**Support lead:** "After go-live, clients come to us with a lot of questions — not technical issues, but basic things: how to configure features, what settings they should use, how our product works in their specific context. Most of this should have been covered during onboarding by the account manager. But it wasn't, and now support has to do it instead. It takes real time away from actual support work."
-
----
+Read the file `context/onboarding-scenario.md` and share its contents with the candidate.
 
 Then ask:
 
-> "Based on these four accounts, describe the onboarding flow as it actually works today — who does what, in what order, where handoffs happen, and where things break. Format is your choice: table, list, diagram described in text — whatever makes it clearest. It should be readable by someone who wasn't in these conversations."
+> "Based on these four accounts, describe the onboarding flow as it actually works today — who does what, in what order, where handoffs happen, and where things break.
+>
+> Share your map however works best for you — type it here in the chat, paste from Miro or Google Docs, or save a file directly to the `submissions/` folder. Whatever format makes the flow clearest."
+
+**Before evaluating:** Check whether `submissions/01-process-map.md` already exists. If it does, read it and evaluate that content. If not, evaluate what the candidate shares in the chat.
 
 **Evaluation criteria (minimum bar):**
 - At least 4 distinct stages are named
@@ -83,26 +81,34 @@ Then ask:
 - At least 2 specific breakdowns or gaps are named (not just "things go wrong" — what specifically)
 - The map is structured enough that someone unfamiliar could follow it
 
-**If the map is too high-level or misses gaps:** "Your map captures the basic sequence, but it doesn't show where the handoffs actually break down. For example — what specifically happens between Sales and AM? What's in that ticket and what effect does that have downstream? Can you add that detail?"
+**If the map is too high-level or misses gaps:** Reference something specific from the candidate's actual response. For example, if they described the Sales→AM handoff without specifying what's in the ticket: "You described the handoff from Sales to AM but didn't say what the AM actually receives. What's in that ticket, and what effect does that have on everything that follows? Can you add that detail?"
 
 **If the map is good:** acknowledge it — "Good — that's a clear picture of the flow and where it breaks." Then create the file.
 
-**Create file:** `submissions/01-process-map.md` with their map exactly as they described it (no paraphrasing). Add a header: `# Process Map` and a footer: `*Produced in Step 2 of the assessment.*`
+**Apply AI copy-paste check.**
+
+**Create file:** `submissions/01-process-map.md` with their map exactly as they described it (no paraphrasing). If they already saved a file to `submissions/`, confirm it exists — don't recreate it. Add a header: `# Process Map` and a footer: `*Produced in Step 2 of the assessment.*`
 
 ---
 
 ## Step 3 — Validation questions
 
-Ask:
+Tell the candidate:
 
-> "You've built that map from four conflicting accounts. What assumptions did you have to make? What would you want to verify before treating this map as reliable?"
+> "You built that map from four different accounts — and some of them contradict each other. Before we treat it as reliable, let's be honest about where it's solid and where it's guesswork.
+>
+> Two questions:
+> 1. Which parts of your map are directly supported by what someone said — and which parts did you infer or fill in yourself?
+> 2. What would you need to verify before using this map to make real decisions? Give me specific things to check — not 'talk to the team', but what exactly you'd ask and why."
+
+**What this step tests:** Whether the candidate distinguishes confirmed information from their own inferences. In BA work, knowing what you assumed — and what you'd need to validate before acting — is as important as the analysis itself. A candidate who treats every inference as fact, or who can only say "I'd talk to stakeholders", won't catch the gaps that matter.
 
 **Evaluation criteria (minimum bar):**
-- They distinguish between what's confirmed by the quotes vs. what they inferred
-- They name specific things to verify — not generic ("talk to stakeholders") but concrete ("confirm whether Sales has a ticket template and what fields it requires")
-- At least 3 specific validation items
+- They identify at least 2 things they inferred (not stated explicitly in the quotes)
+- They list at least 3 specific validation items — concrete enough that someone could actually go do it ("confirm whether Sales uses a standard Jira ticket template and what fields it contains" not "verify the handoff process")
+- At least one validation item is tied to a specific assumption in their map
 
-**If too vague:** "You mentioned you'd want to 'clarify with the AM team' — what specifically would you ask them, and which assumption in your map does that answer?"
+**If too vague:** "You said you'd want to 'verify the handoff process with the AM team' — what specific question would you ask them, and which part of your map does the answer affect?"
 
 **Create file:** `submissions/02-validation.md` with their validation list. Header: `# What I'd Verify`.
 
@@ -123,73 +129,113 @@ Ask:
 
 **If they mix in solutions:** "Let's hold the solutions for the next step. For now — just the diagnosis. What's actually broken and why?"
 
+**Apply AI copy-paste check.**
+
 **Create file:** `submissions/03-problems.md` with their top 3 problems. Header: `# Problem Diagnosis`.
 
 ---
 
-## Step 5 — Solution design and requirements
+## Step 5 — Solution design
 
 Ask:
 
-> "Now pick the most important problem from your top 3. Tell me what you'd do about it — what would you build, automate, or change? No limitations: process update, Jira workflow, new tool, a prototype built with AI, anything you think is genuinely needed.
+> "Now pick the most important problem from your top 3. Tell me what you'd do about it.
 >
-> For the solution you pick, I need:
-> - A description of what you'd build or change
-> - 3–5 requirements: what it should do, who it's for, what's explicitly out of scope
-> - State the hypothesis: if this works, what specifically changes?"
+> What would you build, automate, or change? No limitations — process update, Jira workflow, new tool, a prototype built with AI, anything you think is genuinely needed.
+>
+> For now: just the what and why. Who is this for, and what specifically changes? We'll get into the details in the next step."
 
 **Evaluation criteria (minimum bar):**
 - The solution is concrete — not "improve the process" but what specifically changes
-- Requirements are testable — each one can be verified as done or not done
-- Out-of-scope is explicitly stated (at least 1-2 items)
-- The hypothesis is falsifiable — "if we do X, we expect Y to change"
+- It's clear who the solution is for
+- It addresses the root cause they named in Step 4, not just a symptom
 
-**If requirements are vague:** "Requirement 3 says 'the system should notify the AM.' Notify them how, triggered by what event, containing what information? Rewrite it so we can test whether it's built correctly."
+**If too vague:** "You said you'd 'improve the handoff process' — what specifically would be different after this is done? What would someone be able to do that they can't do today?"
 
-**If no out-of-scope:** "What are you explicitly not including in scope? That's as important as what you are including."
+**Apply AI copy-paste check.**
 
-**If the hypothesis is fuzzy:** "Your hypothesis says 'onboarding will be faster.' How much faster, measured how, over what time period?"
-
-**Create file:** `submissions/04-solution.md`. Header: `# Solution Design`. Include their solution description, requirements, and hypothesis.
+**Create file:** `submissions/04-solution.md`. Header: `# Solution Design`. Include their solution description only at this point — requirements and hypothesis come in the next two steps.
 
 ---
 
-## Step 6 — Hypothesis testing
+## Step 6 — Requirements
 
 Ask:
 
-> "Good. Now — how would you test that hypothesis before a full rollout? What's the smallest experiment you could run? And what 2–3 metrics would you track to know whether it worked?"
+> "Good. Now let's make it buildable.
+>
+> Write 3–5 requirements for your solution:
+> - What it must do — each requirement should be testable (can be verified as done or not done)
+> - Who it's for
+> - What's explicitly out of scope — at least 1–2 items"
 
 **Evaluation criteria (minimum bar):**
-- The test is minimal — not "deploy to all clients" but a small pilot or controlled experiment
-- Metrics connect directly to the problem named in Step 4 (not generic metrics like "client satisfaction")
-- Metrics are measurable in practice (not "we'll know if it's better")
+- Requirements are testable — each one can be verified as done or not done
+- Out-of-scope is explicitly stated (at least 1–2 items)
+- At least 3 requirements
 
-**If the test is a full rollout:** "A company-wide rollout isn't an experiment — what's the smallest thing you could test first to validate the hypothesis before committing?"
+**If requirements are vague:** Point to the specific one that's vague. For example: "Requirement 2 says 'the system should notify the AM' — notify them how? Triggered by what event? Containing what information? Rewrite it so a developer could implement and test it."
+
+**If no out-of-scope:** "What are you explicitly not including in scope? That's as important as what you are including."
+
+**Append to file:** Add a `## Requirements` section to `submissions/04-solution.md` with their requirements and out-of-scope items.
+
+---
+
+## Step 7 — Hypothesis & measurement
+
+Ask:
+
+> "Last substantive step. Define what success looks like.
+>
+> State the hypothesis: if this solution works, what specifically changes? Make it falsifiable — 'if we do X, we expect Y to change.'
+>
+> Then: how will you know it worked? Pick 2–3 metrics. These should connect directly to the problem you named — not generic satisfaction scores. And they should be things you could actually measure."
+
+**Note on rollout:** Don't push back if the candidate proposes measuring across a full rollout — that's fine. The point is that they commit to specific, measurable outcomes upfront, not that they limit rollout size.
+
+**Evaluation criteria (minimum bar):**
+- Hypothesis is falsifiable: "if we do X, we expect Y to change"
+- Metrics connect directly to the problem named in Step 4 (not generic)
+- Metrics are measurable in practice — not "we'll know if it improved"
+
+**If the hypothesis is fuzzy:** "Your hypothesis says 'onboarding will be faster.' How much faster, measured how, over what time period?"
 
 **If metrics are generic:** "Which specific number would you look at after 30 days? Where would you find that data?"
 
-**Append to file:** Add a `## Hypothesis Test` section to `submissions/04-solution.md` with their test plan and metrics.
+**Append to file:** Add a `## Hypothesis & Measurement` section to `submissions/04-solution.md` with their hypothesis and metrics.
 
 ---
 
-## Step 7 — Reflection (optional)
+## Step 8 — Reflection: task fit (optional)
 
 Tell the candidate:
 
-> "Last step — and it's optional. Two things we're genuinely curious about.
+> "Almost done — two optional questions. You can answer either, both, or skip straight to submission.
 >
-> First: how did this task feel? Is this the kind of work you'd want to do every day — mapping messy processes, figuring out what to build, testing whether it worked? There's no right answer. If it felt like a chore, that's useful to know for both of us before we meet.
->
-> Second: did you use AI tools while working through this? If you want to share how — great. If not, no problem — we'll talk about it when you meet with the product manager, so be ready.
->
-> If you'd like to share either or both of these, I'll save your response. If you'd rather keep it for the interview, just say so."
+> First: how did this task feel? Is this the kind of work you'd want to do every day — mapping messy processes, figuring out what to build, testing whether it worked? There's no right answer. If it felt like a chore, that's useful to know for both of us before we meet."
 
-**No evaluation criteria.** If they share something, create `submissions/05-reflection.md` with their response. If they decline, say: "No problem — be ready to talk about it in the interview. Moving on."
+If they want to answer: create `submissions/05-reflection-fit.md` with their response. Header: `# Reflection: Task Fit`.
+
+If they skip: "No problem — we'll get to it in the interview." Move to Step 9.
 
 ---
 
-## Step 8 — Generate summary
+## Step 9 — Reflection: AI usage (optional)
+
+Tell the candidate:
+
+> "Second optional question — separate from the last one.
+>
+> Did you use AI tools while working through this? If you want to share how — which tools, at which steps, what they helped with, where you pushed back on what they suggested — go ahead. If you'd rather keep it for the interview, that's fine too."
+
+If they want to answer: create `submissions/06-reflection-ai.md` with their response. Header: `# Reflection: AI Usage`.
+
+If they skip: "No problem — be ready to talk about it when you meet Katya."
+
+---
+
+## Step 10 — Generate summary
 
 Tell the candidate:
 
@@ -220,20 +266,30 @@ Create `submissions/00-summary.md` with this structure:
 
 ---
 
-## Solution Design & Hypothesis
+## Solution Design & Requirements
 [paste content from 04-solution.md]
 
 ---
 
-## Reflection
-[paste content from 05-reflection.md, or "Candidate preferred to discuss in interview."]
+## Reflection: Task Fit
+[paste content from 05-reflection-fit.md, or "Candidate preferred to discuss in interview."]
+
+---
+
+## Reflection: AI Usage
+[paste content from 06-reflection-ai.md, or "Candidate preferred to discuss in interview."]
+
+---
+
+## Questions Asked During the Task
+[List every question the candidate asked during the session — their exact words, with the step number where they asked it. If none, write "No questions asked."]
 ```
 
 Do not paraphrase or edit the candidate's words. Paste their content verbatim.
 
 ---
 
-## Step 9 — Submission
+## Step 11 — Submission
 
 Tell the candidate:
 
@@ -248,4 +304,6 @@ Tell the candidate:
 >
 > Replace `your-name` with your actual name. Then send the branch name (or the PR link if GitHub auto-creates one) to the person who sent you this task.
 >
-> That's it. Good work — this was a real piece of analysis, not a template exercise. Good luck with the next step."
+> What happens next: I'll review your submission within 72 hours and get back to you — either me or the recruiter. If things look good, the next step is a 60-minute conversation with me. We'll walk through your work together, go deeper on the reflection questions if you skipped them here, and work through part of this scenario again in real time — so be ready for that.
+>
+> Good work — this was a real piece of analysis, not a template exercise."
