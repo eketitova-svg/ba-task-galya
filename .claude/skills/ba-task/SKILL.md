@@ -35,7 +35,11 @@ Deliver this welcome message to the candidate:
 >
 > Any questions before we start?"
 
-Wait for their response. Answer any questions honestly — about the company, the role, or the task format. Then move to Step 1.
+Wait for their response. Answer any questions honestly — about the company, the role, or the task format.
+
+**GitHub username check:** Before moving on, ask: "One practical thing — have you already shared your GitHub username with the person who sent you this task? You'll need it to submit at the end, and it's easier to sort out now than at the last minute." If they haven't, remind them to send it now by replying to whoever sent them the task link. Note their username in the summary at Step 10 if they share it here.
+
+Then move to Step 1.
 
 ---
 
@@ -256,6 +260,7 @@ Create `submissions/00-summary.md` with this structure:
 
 **Date completed:** [today's date]
 **Steps completed:** [list which steps were completed]
+**Candidate GitHub username:** [if shared during the task, otherwise "not provided"]
 
 ---
 
@@ -322,6 +327,8 @@ Then tell the candidate:
 > ```
 >
 > Replace `your-name` with your actual name. Then send the branch name (or the PR link if GitHub auto-creates one) to the person who sent you this task.
+>
+> **If you get a permission error (403) when pushing:** your GitHub account needs to be added as a collaborator on this repo. Reply to the email you received with your GitHub username — someone will add you and you can push again. Your commit is already saved locally, so nothing is lost.
 >
 > What happens next: Katya — your future manager if you join — will review your submission within 72 hours and get back to you, or the recruiter will. If things look good, the next step is a 60-minute conversation with Katya. You'll walk through your work together, go deeper on the reflection questions if you skipped them here, and work through part of this scenario again in real time — so be ready for that.
 >

@@ -4,11 +4,18 @@ This is an interactive take-home task for the Senior BA/SA position. Instead of 
 
 ---
 
+## Before you start
+
+**You'll need a GitHub account to submit your work.** If you haven't already sent your GitHub username to the person who sent you this task — do that now, before you begin. They'll add you as a collaborator so your submission goes through without issues at the end.
+
+No GitHub account? Let the person who sent this know and they'll find an alternative.
+
+---
+
 ## What you'll need
 
 - **Claude Code** — the CLI tool from Anthropic. Install it at [claude.ai/code](https://claude.ai/code). You'll need a free account.
 - **Git** — to clone this repo and submit your work
-- About **1–2 hours**
 
 ---
 
@@ -16,14 +23,15 @@ This is an interactive take-home task for the Senior BA/SA position. Instead of 
 
 ```bash
 # 1. Clone this repo
-git clone https://github.com/eketitova-svg/ba-hiring-task
-cd ba-hiring-task
+#    Use the link from the email or message you received — it's specific to you.
+git clone <your-repo-link>
+cd <repo-folder>
 
 # 2. Open Claude Code in this folder
 claude .
 ```
 
-That's it. Once Claude Code opens, type:
+Once Claude Code opens, type:
 
 ```
 /ba-task
@@ -35,7 +43,7 @@ Claude will take it from there.
 
 ## How it works
 
-The task has 9 short steps. At each step, Claude explains what we're looking for, you respond, and Claude may ask follow-up questions before moving on. Your answers get saved as files in the `submissions/` folder as you go.
+The task has 11 steps. At each step, Claude explains what we're looking for, you respond, and Claude may ask follow-up questions before moving on. Your answers get saved as files in the `submissions/` folder as you go.
 
 You can use any tools you want — including AI — while working through the steps. Claude will ask about that too.
 
@@ -43,7 +51,7 @@ You can use any tools you want — including AI — while working through the st
 
 ## Submitting
 
-At the end of the task, Claude will give you the exact commands to submit. It looks like this:
+At the end of the task, Claude will give you the exact commands to submit:
 
 ```bash
 git checkout -b submission/your-name
@@ -53,6 +61,8 @@ git push origin submission/your-name
 ```
 
 Then send the branch name (or PR link) to the person who sent you this task.
+
+**Getting a permission error when pushing?** Your GitHub username wasn't added yet. Reply to the person who sent you this with your username — they'll add you and you can run the push command again. Your work is saved locally, nothing is lost.
 
 ---
 
